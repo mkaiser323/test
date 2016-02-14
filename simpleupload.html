@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="simpleupload.php" method="post" enctype="multipart/form-data">
+     <div class = "row">
+		<div class = "col-md-12">
+			<label>Image</label>
+				<p class ="error" id = "img-error">*Please upload a photo</p>
+				<!--<input type="button" value="Upload Image" id="upload-file-btn">-->
+				<input type="file" name="fileToUpload" id="picFile" accept="image/*">
+		</div>
+	</div>
+	<div class = "col-md-6">
+					<!--description-->
+					<label>Description</label>
+					<textarea rows="10" cols="50" name="description" id="description"></textarea>
+	</div>
+
+	<div class = "col-md-6">
+
+		<!--tags-->
+		<div class = "row">
+			<div class = "col-md-12">
+				<label>Tags</label>
+			</div>
+
+			<p class ="error" id = "tag-error">*Please enter at least one tag- this will help people find your art</p>
+
+			<div class = "tags">
+				<input type="hidden" name="tag_count" id = "tag_count" value="3" />
+				<div class = "col-md-12"><input type = "text" class = "tag_input_box" name="tag[]" id = "tag[]"><i class = "fa fa-close"></i></div>
+				<div class = "col-md-12"><input type = "text" class = "tag_input_box" name="tag[]" id = "tag[]"><i class = "fa fa-close"></i></div>
+				<div class = "col-md-12"><input type = "text" class = "tag_input_box" name="tag[]" id = "tag[]"><i class = "fa fa-close"></i></div>
+			</div>
+			<div class = "col-md-12" ><div class = "add"><i class = "fa fa-plus"></i></div></div>
+		</div>
+
+		<!--price-->
+		<div class = "row">
+				<p class ="error" id = "price-error">*Please enter a price</p>
+				<p class ="error" id = "not-a-number-error">*Don't be silly. The price should be a number</p>
+				<div class = "col-md-6">
+					<input type = "text" id ="price_input_box" placeholder="price" name = "price">
+				</div>
+				
+  		</div>
+  		</div>
+	<div class = "col-md-6">
+		<input type="submit" id = "submit" name = "submit">
+	</div>
+	
+
+</form>
+
+</body>
+</html>

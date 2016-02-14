@@ -1,0 +1,27 @@
+<?php
+
+
+
+$orderID = uniqid("ord",TRUE);
+
+// Artist info
+
+$sellerID = 
+$apID = 
+$price =
+ 
+// Buyer info
+
+$buyerID = 
+$payment_success = FALSE;
+
+// insert PayPal feedback here
+
+if ($payment_success){
+	$create_order = "INSERT INTO orders (orderID, apID, orderTotal, buyerID, sellerID, orderDate) VALUES ('"
+	$orderID . "','" . $apID . "','" . $price . "','" . $buyerID . "','" . $sellerID . "','" . "DEFAULT)";
+
+
+
+
+?>

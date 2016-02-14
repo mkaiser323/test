@@ -1,0 +1,120 @@
+<!Doctype html>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!--font-awesome icons-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!--custom style-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/upload.css">
+
+		<title></title>
+	</head>
+	<body>
+		
+		<nav>
+			<a href = "index.html">
+				<div class = "col-md-4" id = "logo">
+					<h1>Gallery</h1>
+				</div>
+			</a>
+			<div class = "col-md-4">
+				<div id = "search-bar">
+					<!--<div class="input-wrapper">-->
+					<input id = "search" type = "text" placeholder = "search...">
+					<!--</div>-->
+					<button onclick = "search()" id = "search_button" ><i class = "fa fa-search" ></i></button>
+				</div>
+			</div>
+			<a href = "upload.html" class = "disabled">
+				<div class = "col-md-2 upload-section">
+					<i class = "fa fa-upload" id = "upload"></i>
+				</div>
+			</a>
+		</nav>
+
+
+		<form method="post" action="upload.php" enctype="multipart/form-data">
+		<!--<form enctype="multipart/form-data">-->
+
+		<input type = "hidden" value ="Javier" id ="artistID" name = "artistID"/>
+
+			<!--upload image-->
+
+
+			<div class = "row">
+				<div class = "col-md-12">
+					<label>Image</label>
+
+					<p class ="error" id = "img-error">*Please upload a photo</p>
+
+					<!--<input type="button" value="Upload Image" id="upload-file-btn">-->
+					<!--<button type = "button" id="upload-file-btn">Upload Image <i class = "fa fa-upload"></i></button>-->
+					<input type="file" name="file" id="file" accept="image/*">
+				</div>
+
+			</div>
+
+
+
+			<div class = "row">
+				<div class = "col-md-6">
+					<!--description-->
+					<label>Description</label>
+					<textarea rows="10" cols="50" name="description" id="description"></textarea>
+				</div>
+
+				<div class = "col-md-6">
+
+					<!--tags-->
+					<div class = "row">
+						<div class = "col-md-12">
+							<label>Tags</label>
+						</div>
+
+						<p class ="error" id = "tag-error">*Please enter at least one tag- this will help people find your art</p>
+
+						<div class = "tags">
+							<input type="hidden" name="tag_count" id = "tag_count" value="3" />
+							<div class = "col-md-12"><input type = "text" class = "tag_input_box" name="tag[]" id = "tag1"><i class = "fa fa-close"></i></div>
+							<div class = "col-md-12"><input type = "text" class = "tag_input_box" name="tag[]"><i class = "fa fa-close"></i></div>
+							<div class = "col-md-12"><input type = "text" class = "tag_input_box" name="tag[]"><i class = "fa fa-close"></i></div>
+						</div>
+						<div class = "col-md-12" ><div class = "add"><i class = "fa fa-plus"></i></div></div>
+					</div>
+
+					<!--price-->
+					<div class = "row">
+							<p class ="error" id = "price-error">*Please enter a price</p>
+							<p class ="error" id = "not-a-number-error">*Don't be silly. The price should be a number</p>
+							<div class = "col-md-6">
+								<input type = "text" id ="price_input_box" placeholder="price" name = "price">
+							</div>
+							
+			  		</div>
+		  		</div>
+  			</div>
+  			<div class = "col-md-6">
+				<input type="submit" id = "submit" name = "submit">
+			</div>
+		</form>
+
+		<!--<section id = "search-results"></section>-->
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src = "js/cookies.js"></script>
+		<!--<script type="text/javascript" src = "js/script.js"></script>-->
+		<script type="text/javascript" src = "js/upload.js"></script>
+	</body>
+</html>

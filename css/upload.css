@@ -1,0 +1,100 @@
+form{
+	margin-top: 30px;
+	padding: 100px;
+}
+
+
+input[type="file"]{
+	width: 100%;
+	color: white;
+	background-color: #7300e6;
+	border: none;	
+
+}
+
+
+form label, form input{
+	text-align: center;
+}
+
+form label{
+	display: block;
+	margin-top:10px;
+	color: #fff;
+}
+
+#search_button{
+}
+
+#upload-file-btn{
+	width: 100%;
+}
+
+form input, textarea{
+	border-radius: 5px;
+	margin: 5px;
+}
+
+textarea{
+	width: 100%;
+}
+
+.tag_input_box{
+	width: 95%;
+}
+
+.fa-close{
+	width: 2%;
+	cursor: pointer;
+}
+
+.add{
+	width: 100%;
+	color: white;
+	background-color: #7300e6;
+	border-radius: 5px;
+}
+
+.fa-plus{
+	display: block;
+	background-color: #7300e6;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type = "submit"], #price_input_box{
+	width: 100%;
+}
+
+input[type = "submit"], #upload-file-btn{
+	background-color: #7300e6;
+	color: white;
+	border: none;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.red{
+	background-color: red;
+}
+
+.error{
+	display: none;
+	color: #cc0000;
+	font-weight: bold;
+}
+
+#tag-error, #price-error, #not-a-number-error{
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+
+

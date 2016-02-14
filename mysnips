@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<snippets>
+  <branch title="My Snippets">
+    <leaf type="insert" title="Test">
+      <before>echo 'this is BEFORE the cursor'</before>
+      <after>this is AFTER the cursor';</after>
+    </leaf>
+    <leaf type="insert" title="gallery_connect" tooltip="connects to the Gallery db">
+      <before>
+{ // Connect and Test MySQL and specific DB (return $dbSuccess = T/F)
+				
+			$hostname = "localhost";
+			$username = "root";
+			$password = "";
+			
+			$databaseName = "gallery";
+			$dbconn = new mysqli($hostname, $username, $password, $databaseName);
+			
+			
+			if ($dbconn-&gt;connect_error) {
+				trigger_error('Database connection failed: ' . mysqli_connect_error(), E_USER_ERROR);
+			}
+}  
+
+//	 Execute code ONLY if connections were successful 	
+if ($dbconn) {
+	
+		
+			
+}</before>
+      <after/>
+    </leaf>
+  </branch>
+</snippets>

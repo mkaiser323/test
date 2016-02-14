@@ -1,0 +1,136 @@
+<!Doctype html>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!--font-awesome icons-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!--custom style-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title></title>
+	</head>
+	<body onbeforeunload="HandleBackFunctionality()">
+		<div id = "overlay">
+		</div>
+
+		<div id = "details"></div>
+
+		<div id = "paypal">
+			<nav class ="paypal"><h1>Totally legit PayPal interface</h1></nav>
+			<div id = "body">
+				<div class = "col-md-12">
+					<div class = "row">
+						<p id = "welcome">Welcome back, John!</p>
+						<hr>
+					</div>
+
+					<div class = "row">
+						<div id = "shipping">
+							<h2>Bill to:</h2>
+
+							<p id = "name">John Doe</p>
+							<p id = "address-line-1">1234 Address Rd. City, State 12345-0000</p>
+							<p id = "address-line-2">United States</p>
+							<br><p class = "change">Change billng address</p>
+						</div>
+						<hr>
+					</div>
+
+					<div class = "row">
+						<h2 id = "order-total">Order Total: <span id = "insert-total"></span></h2>
+						<hr>
+					</div>
+
+					<div class = "row">
+						<div id = "payment">
+							<h2>Pay with</h2>
+							<img id = "visa" src = "img/visa.png"/><p id = "credit-card">Visa x-1234</p>
+							<br><p class = "change">Change billing info</p>
+						</div>
+					</div>
+
+					<div class = "row">
+						<button id = "continue">Continue</button>
+					</div>
+				</div>
+
+				<!--<div class = "col-md-6 blue-bg">
+					<p>PayPal is the Safer, Easier way to pay.</p>
+
+				</div>-->
+			</div>
+		</div>
+
+		<div id = "download">
+			<div id = "download-overlay">
+			<div class = "row">
+				<p class = 'back-to-results close-download-page'><i class = 'fa fa-arrow-left'></i> Back to search results </p>
+			</div>
+
+			<div class = "row">
+				<div class = "row"><img src = "img/art/zebra.jpg"/></div>
+				<div class = "row">
+					<a href = "img/art/zebra.jpg" download><button id = "download-button" type = "button">Download <i class = "fa fa-download"></i></button></a>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<nav>
+			<div class = "row">
+				<a href = "index.html">
+					<div class = "col-md-6" id = "logo">
+						<h1>Gallery</h1>
+					</div>
+				</a>
+				<div class = "col-md-6" id = "search-bar">
+					<div >
+						<form method="get" enctype="multipart/form-data">
+
+						<!--<div class="input-wrapper">-->
+						<input id = "search" type = "text" placeholder = "search for something">
+						<!--</div>-->
+						<button type = "submit" id = "search_button" ><i class = "fa fa-search" ></i></button>
+						<!--removed onclick = "search()" -->
+					</form>
+					</div>
+				</div>
+				<!--<a href = "upload.html" class = "disabled">-->
+				<!--
+				<div class = "col-md-4">
+					<div class = "upload-section">
+							<button id = "upload-button"><i class = "fa fa-upload" id = "upload"> Upload Art</i></button>
+					</div>
+				-->
+					<!--
+					<div class = "col-md-4 welcome-section">
+						<p class = "welcome-back">Welcome Back, </p>
+						<p class = "welcome-name">John! <i class = "fa fa-caret-down"></i></p>
+						<ul class = "profile-dropdown">
+							<li>Profile</li>
+							<li>Logout</li>
+						</ul>
+					</div>
+					-->
+				<!--</a>-->
+			</div>
+		</nav>
+
+
+		<section id = "search-results"></section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src = "js/cookies.js"></script>
+		<script type="text/javascript" src = "js/script.js"></script>
+		<script type="text/javascript" src = "js/json.js"></script>
+	</body>
+</html>

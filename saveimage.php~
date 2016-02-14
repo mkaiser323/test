@@ -1,0 +1,15 @@
+<?php
+
+$targetdir = "c:/galleryimages/";
+$target = $targetdir . basename( $_FILES['image']['name']);
+
+// declare variables
+
+// connect to db
+
+// write info to db
+
+// write image to server
+
+// check for both correct
+?>
